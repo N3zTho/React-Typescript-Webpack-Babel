@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es2020",
+    "target": "ESNext",
+    "jsx": "react",
+    "allowJs": true,
+    "strict": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
