@@ -7,7 +7,12 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --config webpack.config.js"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "typescript",
+    "webpack",
+    "babel"
+  ],
   "author": "Ernesto Redonet",
   "license": "ISC",
   "devDependencies": {
