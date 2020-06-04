@@ -17,8 +17,8 @@ const Message: React.FC<MessageProps> = ({ msg }) => {
     event.preventDefault();
 
     setUser({
-      name: "Ernesto",
-      lastname: "Redonet",
+      name: "User",
+      lastname: "Lastname",
     });
   };
 
