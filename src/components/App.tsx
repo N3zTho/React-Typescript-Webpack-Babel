@@ -16,7 +16,7 @@ const App: React.FC<AppProps> = ({ compiler, framework }) => {
           Hello from {compiler} and {framework}!
         </h2>
 
-        <Message msg="Todo bien" />
+        <Message msg="Message from props" />
       </Suspense>
     </>
   );

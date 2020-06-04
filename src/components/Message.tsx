@@ -24,12 +24,17 @@ const Message: React.FC<MessageProps> = ({ msg }) => {
 
   return (
     <>
-      Message example
       <p>
         Hola {user?.name} {user?.lastname}
       </p>
       {msg && <p>{msg}</p>}
       <button onClick={onClick}>Click me</button>
+      <p>
+        <strong>Repo:</strong>
+        <a href="https://github.com/N3zTho/React-Typescript-Webpack-Babel">
+          Github
+        </a>
+      </p>
       <br />
       <br />
       <img src="/images/avatar2.png" />
