@@ -3,11 +3,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const Dotenv = require("dotenv-webpack");
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
   mode: "production",
   entry: {
     bundle: path.join(__dirname, "src", "index.tsx"),
+  },
+  devServer: {
+    port: 4000,
   },
   output: {
     filename: "[name].js",
@@ -56,6 +60,7 @@ module.exports = {
   },
 
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "index.html"),
       hash: true,
